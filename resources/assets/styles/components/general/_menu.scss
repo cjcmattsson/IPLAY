@@ -1,0 +1,31 @@
+nav {
+  height: 80px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: flex!important;
+  align-items: center;
+  justify-content: flex-end;
+  z-index: 100;
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 400px;
+    height: 60px;
+    padding-right: 5vw;
+    margin: 0;
+
+    li {
+      text-align: center;
+      display: inline-block;
+
+      a {
+        color: $light-teal
+      }
+    }
+  }
+}
