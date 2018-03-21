@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "9060064338716afa6aa8c7d33e0a09fc",
+    "content-hash": "b4075e6496a15d7c2a95d6d7acf055e0",
     "packages": [
         {
             "name": "composer/installers",
@@ -1176,6 +1176,26 @@
                 "wordpress"
             ],
             "time": "2018-03-20T08:53:52+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/hide-updates",
+            "version": "1.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/hide-updates/",
+                "reference": "tags/1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/hide-updates.1.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/hide-updates/"
         }
     ],
     "packages-dev": [],
