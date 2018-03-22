@@ -5,13 +5,25 @@
 
             <div class="parallax__group">
                 <div class="parallax__layer parallax__layer--base">
-                <?php  $pages = get_pages();
+
+                <?php  $pages = get_posts(
+                    array(
+                        'post_type' => 'page',
+                        'order' => 'ASC',
+                        'orderby' => 'menu_order'
+                    ));
+
                 foreach ($pages as $page_data): ?>
+
                 <?php
                 $content = apply_filters('the_content', $page_data->post_content);
-                $title = $page_data->post_title; ?>
+
+                $title = $page_data->post_title;?>
+
+
+                    <span id='<?php echo $title ?>'></span>
                     <div class="one-page-section">
-                        <h1 id="<?php echo $title ?>"><?php echo $title ?></h1>
+                        <h1><?php echo $title ?></h1>
                         <div><?php echo $content ?></div>
                     </div>
 
