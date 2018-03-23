@@ -1,22 +1,22 @@
 <?php /* Template Name: Home */ ?>
 
-<?php get_header(); ?>
+<?php
+$fields = get_fields(get_the_ID());
+$hero_text = $fields['hero_text'];
+$button = $fields['cta_button'];
+
+
+?>
 
 <div class="row">
     <div class="col">
-        <?php if (have_posts()) : ?>
 
-            <?php while (have_posts()): the_post(); ?>
 
-                <h1><?php the_title(); ?></h1>
+                <h1 class="<?php the_title() ?>"><?php the_title() ?></h1>
+                <p><?php echo $hero_text ?></p>
+                <p><?php echo $button ?></p>
 
-                <?php the_content(); ?>
 
-            <?php endwhile; ?>
 
-        <?php endif; ?>
     </div><!-- /col -->
 </div><!-- /row -->
-
-
-<?php get_footer(); ?>
