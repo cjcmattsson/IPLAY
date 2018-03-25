@@ -1,9 +1,10 @@
 <?php /* Template Name: Home */ ?>
 
 <?php
-$fields = get_fields(get_the_ID());
+$fields = get_fields();
 $hero_text = $fields['hero_text'];
 $button = $fields['cta_button'];
+$video = $fields['video'];
 
 
 ?>
@@ -12,9 +13,11 @@ $button = $fields['cta_button'];
     <div class="col">
 
 
-                <h1 class="<?php the_title() ?>"><?php the_title() ?></h1>
-                <p><?php echo $hero_text ?></p>
-                <p><?php echo $button ?></p>
+        <h1><?php echo $hero_text ?></h1>
+        <div class="embed-container">
+            <?php the_field('video'); ?>
+        </div>
+        <button><?php echo $button ?></button>
 
 
 

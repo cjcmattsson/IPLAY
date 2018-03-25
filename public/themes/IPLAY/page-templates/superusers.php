@@ -1,9 +1,7 @@
-<?php /* Template Name: The App */ ?>
+<?php /* Template Name: Superusers */ ?>
 
 <?php
-$fields = get_fields(46);
-
-
+$fields = get_fields(77)
 ?>
 
 <div class="row">

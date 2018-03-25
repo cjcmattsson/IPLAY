@@ -1,7 +1,7 @@
 <?php /* Template Name: Sports */ ?>
 
 <?php
-$sport_fields = get_fields(72);
+$fields = get_fields(72);
 
 
 
@@ -11,8 +11,7 @@ $sport_fields = get_fields(72);
     <div class="col">
 
 
-                <h1><?php $sport_fields['hero_text'] ?></h1>
-                <h2>SPORTS</h2>
+                <h1><?php echo $fields['hero_text'] ?></h1>
 
 
 

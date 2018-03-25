@@ -1,20 +1,5 @@
+
 <?php get_header(); ?>
-
-<?php
-
-function title() {
-    $space = ' ';
-    $underscore = '_';
-    if (strpos($title, $space)) {
-        $spaceTitle = str_replace($space, $underscore, $title);
-        echo strtolower($spaceTitle);
-    } else {
-        echo strtolower($title);
-    };
-}
-
- ?>
-
 <div class="parallax">
     <main role="main" class="wrapper">
         <?php if (have_posts()): while (have_posts()): echo the_post(); ?>
@@ -22,32 +7,38 @@ function title() {
             <div class="parallax__group">
                 <div class="parallax__layer parallax__layer--base">
 
-                <?php  $pages = get_posts(
-                    array(
-                        'post_type' => 'page',
-                        'order' => 'ASC',
-                        'orderby' => 'menu_order'
-                    ));
-
-
-
-                foreach ($pages as $page_data):
-
-
-                ?>
-
-                <?php
-                $content = apply_filters('the_content', $page_data->post_content);
-
-                $title = $page_data->post_name;?>
-
-
-                    <span id='<?php echo $title ?>'></span>
+                    <!-- Hero/landing-section -->
                     <div class="one-page-section">
-                        <?php  require __DIR__."/page-templates/$title.php"?>
+                        <?php  require __DIR__."/page-templates/home.php";?>
                     </div>
 
-            <?php endforeach; ?>
+                    <!-- "The App"-section -->
+                        <div class="one-page-section">
+                        <?php  require __DIR__."/page-templates/the-app.php";?>
+                    </div>
+
+                    <!-- "The Sports"-section -->
+                        <div class="one-page-section">
+                        <?php  require __DIR__."/page-templates/sports.php";?>
+                    </div>
+
+                    <!-- Superusers -->
+                        <div class="one-page-section">
+                        <?php  require __DIR__."/page-templates/superusers.php";?>
+                    </div>
+
+                    <!-- "Not Just For Players"-section -->
+                        <div class="one-page-section">
+                        <?php  require __DIR__."/page-templates/stakeholders.php";?>
+                    </div>
+
+                    <!-- "Call to Action"-section -->
+                        <div class="one-page-section">
+                        <?php  require __DIR__."/page-templates/cta.php";?>
+                    </div>
+
+
+
 
         <?php endwhile; else: ?>
             <article>
