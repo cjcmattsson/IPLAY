@@ -8,11 +8,44 @@
     flex-direction: column;
     padding-top: 60px;
     width: 100%;
+
+    .hero-line-left {
+      top: 0;
+      margin-top: -50px;
+      left: 10;
+      transform: translateX(-220px);
+      position: absolute;
+      z-index: 1;
+      height: 110vh;
+      width: 0;
+      border: 1px solid $normal-green;
+    }
+    .hero-line-right {
+      top: 0;
+      margin-top: -50px;
+      left: 10;
+      transform: translateX(-180px);
+      position: absolute;
+      z-index: 1;
+      height: 95vh;
+      width: 0;
+      border: 1px solid $normal-green;
+    }
+
+    .iphone {
+      width: 450px;
+      position: absolute;
+      right: 0;
+      transform: translateX(-80px) translateY(150px);
+      bottom: 0;
+      z-index: 10;
+    }
   }
 
   .embed-container.video {
     height: 500px;
     width: 800px;
+    z-index: 5;
 
     iframe {
       width: 100%;
@@ -26,6 +59,7 @@
     transform: translateY(-200px);
     width: 100%;
     text-align: left;
+    z-index: 10;
 
     .line {
       width: 371px;
@@ -47,7 +81,7 @@
 
     p {
       text-transform: uppercase;
-      font-size: 15px;
+      font-size: 12px;
     }
 
     .buttons {
@@ -87,8 +121,12 @@
     }
 
     .explore {
+      width: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
       font-size: 10px;
-      padding-left: 150px;
+      padding-left: 100px;
     }
 
   }

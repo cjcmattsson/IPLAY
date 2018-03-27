@@ -16,7 +16,7 @@ $params = array(
     'controls'    => 0,
     'hd'        => 1,
     'autohide'    => 1,
-    'autoplay'  => 0,
+    'autoplay'  => 1,
     'mute' => 1,
     'controls' => 0,
     'rel' => 0
@@ -32,11 +32,12 @@ $iframe = str_replace('></iframe>', ' ' . $attributes . '></iframe>', $iframe);
 <div class="row hero">
     <div class="col">
 
-
+        <div class="hero-line-left"></div>
+        <div class="hero-line-right"></div>
         <div class="embed-container video">
             <?php echo $iframe; ?>
         </div>
-
+        <img class="iphone" src="themes/IPLAY/assets/images/iphone.png" alt="">
         <div class="hero-text-cta">
             <div class="line"></div>
             <h1><?php echo $hero_text ?></h1>
@@ -45,7 +46,7 @@ $iframe = str_replace('></iframe>', ' ' . $attributes . '></iframe>', $iframe);
                 <button type="button" name="button">Download on the App Store</button>
                 <button type="button" name="button"><i class="material-icons">android</i> Download on Google Play</button>
             </div>
-            <p class="explore"><?php echo $explore ?></p>
+            <p class="explore"><i class="material-icons">arrow_drop_down</i><?php echo $explore ?><i class="material-icons">arrow_drop_down</i></p>
         </div>
 
 
