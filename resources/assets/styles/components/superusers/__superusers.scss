@@ -1,0 +1,40 @@
+.header-super {
+  text-align: center;
+}
+
+.content-super {
+  z-index: 10;
+  position: relative;
+
+  .superusers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 60vw;
+    border: 1px solid #fff;
+
+    .athletes-images {
+      height: 150px;
+      width: 300px;
+      border: 1px solid #fff;
+
+      .image-super {
+        height: 100%;
+      }
+    }
+
+    .athletes-info-text {
+      height: 150px;
+      width: 300px;
+      border: 1px solid #fff;
+    }
+  }
+}
+  .line-super {
+    height: auto;
+    width: 120vw;
+    transform: translateY(-350px) translateX(-300px);
+    position: absolute;
+    z-index: 1;
+  }

@@ -12,44 +12,42 @@
                         <?php  require __DIR__."/page-templates/home.php";?>
                     </div>
 
+                    <!-- Superusers -->
+                    <div class="one-page-section">
+                        <?php  require __DIR__."/page-templates/superusers.php";?>
+                    </div>
+
                     <!-- "The App"-section -->
-                        <div class="one-page-section">
+                    <div class="one-page-section">
                         <?php  require __DIR__."/page-templates/the-app.php";?>
                     </div>
 
                     <!-- "The Sports"-section -->
-                        <div class="one-page-section">
+                    <div class="one-page-section">
                         <?php  require __DIR__."/page-templates/sports.php";?>
                     </div>
 
-                    <!-- Superusers -->
-                        <div class="one-page-section">
-                        <?php  require __DIR__."/page-templates/superusers.php";?>
-                    </div>
-
                     <!-- "Not Just For Players"-section -->
-                        <div class="one-page-section">
+                    <div class="one-page-section">
                         <?php  require __DIR__."/page-templates/stakeholders.php";?>
                     </div>
 
                     <!-- "Call to Action"-section -->
-                        <div class="one-page-section">
+                    <div class="one-page-section">
                         <?php  require __DIR__."/page-templates/cta.php";?>
                     </div>
 
 
+                <?php endwhile; else: ?>
+                    <article>
+                        <p>Nothing to see.</p>
+                    </article>
+                <?php endif; ?>
+                <?php get_footer(); ?>
 
-
-        <?php endwhile; else: ?>
-            <article>
-                <p>Nothing to see.</p>
-            </article>
-        <?php endif; ?>
-        <?php get_footer(); ?>
-
-    </div>
-        <div class="parallax__layer parallax__layer--back"></div>
-    </div>
-</main>
+            </div>
+            <div class="parallax__layer parallax__layer--back"></div>
+        </div>
+    </main>
 
 </div>

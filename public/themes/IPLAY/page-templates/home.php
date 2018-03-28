@@ -30,7 +30,7 @@ $iframe = str_replace('></iframe>', ' ' . $attributes . '></iframe>', $iframe);
 ?>
 
 <div class="row hero">
-    <div class="col">
+    <div id="Home" class="col">
 
         <div class="hero-line-left"></div>
         <div class="hero-line-right"></div>

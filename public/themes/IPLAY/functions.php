@@ -5,6 +5,9 @@ declare(strict_types=1);
 // Register plugin helpers.
 require template_path('includes/plugins/plate.php');
 
+// Register employee custom post type.
+require get_template_directory().'/post-types/superuser.php';
+
 // Set theme defaults.
 add_action('after_setup_theme', function () {
     // Show the admin bar.
