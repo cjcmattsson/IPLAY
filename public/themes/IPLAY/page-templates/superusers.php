@@ -32,28 +32,34 @@ $superusers = collect(get_posts($args))->shuffle()->take(3);
                         <?php if (get_field('featured', $post_id) === 'Featured'): ?>
                             <?php $name = get_field('name', $post_id); ?>
                             <?php $club = get_field('club', $post_id); ?>
-                            <h4 class="athletes-name"><?php echo $name ?></h4>
-                            <p class="athletes-club"><?php echo $club ?></p>
+                            <div class="athlete-text">
+                                <h4 class="athletes-name"><?php echo $name ?></h4>
+                                <p class="athletes-club"><?php echo $club ?></p>
+                            </div>
                         <?php endif; ?>
                     <?php endforeach; ?>
-
-                    <div class="cta-super">
-                        <p>Join IPLAY and become a SUPERUSER aswell!</p>
-                        <div class="buttons">
-                            <button type="button" name="button">Join IPLAY</button>
-                        </div>
-                    </div>
                 </div>
+
+
                 <div class="athletes-images">
                     <?php foreach($superusers as $user): ?>
                         <?php $post_id = $user->ID; ?>
                         <?php if (get_field('featured', $post_id) === 'Featured'): ?>
                         <?php $img = get_field('image', $post_id); ?>
-                        <img class="image-super" src="<?php echo $img['url'] ?>" alt="">
+                        <div class="skew-img">
+                            <img class="image-super" src="<?php echo $img['url'] ?>" alt="">
+                        </div>
                         <?php endif; ?>
                     <?php endforeach; ?>
                 </div>
             </div>
+            <div class="cta-super">
+                <p>Join IPLAY and become a SUPERUSER aswell!</p>
+                <div class="buttons">
+                    <button type="button" name="button">Join IPLAY</button>
+                </div>
+            </div>
+
 
         </div>
         <svg class="line-super" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
