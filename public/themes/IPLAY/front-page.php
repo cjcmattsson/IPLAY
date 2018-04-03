@@ -4,31 +4,31 @@
     <main role="main" class="wrapper">
         <?php if (have_posts()): while (have_posts()): echo the_post(); ?>
 
-            <div class="parallax__group">
+            <div  class="parallax__group">
                 <div class="parallax__layer parallax__layer--base">
 
                     <!-- Hero/landing-section -->
-                    <div class="one-page-section">
+                    <div id="home" class="one-page-section">
                         <?php  require __DIR__."/page-templates/home.php";?>
                     </div>
 
                     <!-- Superusers -->
-                    <div class="one-page-section">
+                    <div id="superusers" class="one-page-section">
                         <?php  require __DIR__."/page-templates/superusers.php";?>
                     </div>
 
                     <!-- "The App"-section -->
-                    <div class="one-page-section">
+                    <div id="app" class="one-page-section">
                         <?php  require __DIR__."/page-templates/the-app.php";?>
                     </div>
 
                     <!-- "The Sports"-section -->
-                    <div class="one-page-section">
+                    <div id="sports" class="one-page-section">
                         <?php  require __DIR__."/page-templates/sports.php";?>
                     </div>
 
                     <!-- "Not Just For Players"-section -->
-                    <div class="one-page-section">
+                    <div id="stakeholders" class="one-page-section">
                         <?php  require __DIR__."/page-templates/stakeholders.php";?>
                     </div>
 

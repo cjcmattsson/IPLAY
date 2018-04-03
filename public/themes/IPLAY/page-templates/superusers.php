@@ -47,8 +47,10 @@ $superusers = collect(get_posts($args))->shuffle()->take(3);
                 <div class="athletes-images">
                     <?php foreach($superusers as $user): ?>
                         <?php $post_id = $user->ID; ?>
+                        <?php if (get_field('featured', $post_id) === 'Featured'): ?>
                         <?php $img = get_field('image', $post_id); ?>
                         <img class="image-super" src="<?php echo $img['url'] ?>" alt="">
+                        <?php endif; ?>
                     <?php endforeach; ?>
                 </div>
             </div>

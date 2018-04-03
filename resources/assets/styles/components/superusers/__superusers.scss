@@ -15,15 +15,41 @@
     border: 1px solid #fff;
 
     .athletes-images {
+      position: relative;
       height: 150px;
       width: 300px;
       border: 1px solid #fff;
 
       .image-super {
         height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100px;
+        height: 100px;
+        transform: translate(50%, 50%);
+        transition: all 500ms ease;
+
+
+        &:nth-child(1) {
+          opacity: 1;
+          transform: translate(-25%, -25%);
+          z-index: 3;
+        }
+
+        &:nth-child(2) {
+          opacity: 1;
+          transform: translate(0, 0);
+          z-index: 2;
+        }
+
+        &:nth-child(3) {
+          opacity: 1;
+          transform: translate(25%, 25%);
+          z-index: 1;
+        }
       }
     }
-
     .athletes-info-text {
       height: 150px;
       width: 300px;
@@ -31,10 +57,10 @@
     }
   }
 }
-  .line-super {
-    height: auto;
-    width: 120vw;
-    transform: translateY(-350px) translateX(-300px);
-    position: absolute;
-    z-index: 1;
-  }
+.line-super {
+  height: auto;
+  width: 120vw;
+  transform: translateY(-350px) translateX(-300px);
+  position: absolute;
+  z-index: 1;
+}
