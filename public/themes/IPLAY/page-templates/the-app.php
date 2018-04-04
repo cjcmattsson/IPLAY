@@ -10,8 +10,27 @@ $fields = get_fields(46);
     <div class="col">
 
 
-                <h1><?php echo $fields['hero_text'] ?></h1>
+        <h1 class="section-header-text the-app-header"><?php echo $fields['hero_text'] ?></h1>
+            <div class="phones">
+                <div class="the-app-cross">
+                    <div class="app-line-left"></div>
+                    <div class="app-line-right"></div>
+                </div>
+                <img class="iphone-left-back" src="themes/IPLAY/assets/images/iphone-small.png" alt="">
+                <img class="iphone-middle-front" src="themes/IPLAY/assets/images/iphone-small.png" alt="">
+                <img class="iphone-right-back" src="themes/IPLAY/assets/images/iphone-small.png" alt="">
+            </div>
 
+            <div class="the-app-text-buttons">
+                <div class="arrow-cta-text">
+                    <p>Try IPLAY by swiping/pressing the phone above</p>
+                    <img class="" src="themes/IPLAY/assets/images/arrow.png" alt="">
+                </div>
+                <div class="buttons the-app-buttons">
+                    <button type="button" name="button">Download on the App Store</button>
+                    <button type="button" name="button"><i class="material-icons">android</i></button>
+                </div>
+            </div>
 
 
     </div><!-- /col -->

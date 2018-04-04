@@ -18,7 +18,7 @@
       z-index: 1;
       height: 110vh;
       width: 0;
-      border: 1px solid $normal-green;
+      border: 1px solid $blueish;
     }
     .hero-line-right {
       top: 0;
@@ -29,7 +29,7 @@
       z-index: 1;
       height: 500px;
       width: 0;
-      border: 1px solid $normal-green;
+      border: 1px solid $blueish;
     }
 
     .iphone {
@@ -65,7 +65,7 @@
       width: 371px;
       height: 0;
       margin-left: -200px;
-      border: 1px solid $normal-green;
+      border: 1px solid $blueish;
     }
 
     h1
@@ -74,7 +74,7 @@
       color: $dark-grape;
 
       .green {
-        color: $normal-green;
+        color: $blueish;
       }
     }
 
