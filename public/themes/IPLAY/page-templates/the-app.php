@@ -24,7 +24,7 @@ $fields = get_fields(46);
             <div class="the-app-text-buttons">
                 <div class="arrow-cta-text">
                     <p>Try IPLAY by swiping/pressing the phone above</p>
-                    <img class="" src="themes/IPLAY/assets/images/arrow.png" alt="">
+                    <img class="arrow" src="themes/IPLAY/assets/images/arrow.png" alt="">
                 </div>
                 <div class="buttons the-app-buttons">
                     <button type="button" name="button">Download on the App Store</button>
