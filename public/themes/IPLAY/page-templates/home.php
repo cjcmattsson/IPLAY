@@ -43,7 +43,7 @@ $iframe = str_replace('></iframe>', ' ' . $attributes . '></iframe>', $iframe);
             <h1><?php echo $hero_text ?></h1>
             <p><?php echo $sub_header ?></p>
             <div class="buttons">
-                <button type="button" name="button">Download on the App Store</button>
+                <button type="button" name="button"><img class="apple-icon" src="themes/IPLAY/assets/images/apple.png" alt="">Download on the App Store</button>
                 <button type="button" name="button"><i class="material-icons">android</i> Download on Google Play</button>
             </div>
             <p class="explore"><i class="material-icons">arrow_drop_down</i><?php echo $explore ?><i class="material-icons">arrow_drop_down</i></p>
