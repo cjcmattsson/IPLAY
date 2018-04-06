@@ -7,6 +7,7 @@ require template_path('includes/plugins/plate.php');
 
 // Register employee custom post type.
 require get_template_directory().'/post-types/superuser.php';
+require get_template_directory().'/post-types/sports.php';
 
 // Set theme defaults.
 add_action('after_setup_theme', function () {

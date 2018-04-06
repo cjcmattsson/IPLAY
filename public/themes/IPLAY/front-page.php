@@ -7,6 +7,10 @@
             <div  class="parallax__group">
                 <div class="parallax__layer parallax__layer--base">
 
+                    <!-- "The Sports"-section -->
+                    <div id="sports" class="one-page-section">
+                        <?php  require __DIR__."/page-templates/sports.php";?>
+                    </div>
                     <!-- Hero/landing-section -->
                     <div id="home" class="one-page-section">
                         <?php  require __DIR__."/page-templates/home.php";?>
@@ -22,10 +26,6 @@
                         <?php  require __DIR__."/page-templates/the-app.php";?>
                     </div>
 
-                    <!-- "The Sports"-section -->
-                    <div id="sports" class="one-page-section">
-                        <?php  require __DIR__."/page-templates/sports.php";?>
-                    </div>
 
                     <!-- "Not Just For Players"-section -->
                     <div id="stakeholders" class="one-page-section">
