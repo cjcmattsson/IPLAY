@@ -33,7 +33,7 @@ $sports = collect(get_posts($args));
                     <?php $name_of_sport = get_field('name_of_sport', $post_id); ?>
                     <?php $date_of_release = get_field('date_of_release', $post_id); ?>
                     <div class="single-sport">
-                        <div class="image-sport" style="background-image: url(<?php echo $image['url'] ?>);"></div>
+                        <div class="image-sport" style="background-image: url(<?php echo $image['url'] ?>);"><img src="themes/IPLAY/assets/images/checkmark.png"><div class="overlay"></div></div>
                         <h4 class=""><?php echo $name_of_sport ?></h4>
                         <p class=""><?php echo $date_of_release ?></p>
                     </div>
@@ -46,7 +46,7 @@ $sports = collect(get_posts($args));
                     <?php $name_of_sport = get_field('name_of_sport', $post_id); ?>
                     <?php $date_of_release = get_field('date_of_release', $post_id); ?>
                     <div class="single-sport">
-                        <div class="image-sport planned" style="background-image: url(<?php echo $image['url'] ?>);"></div>
+                        <div class="image-sport planned" style="background-image: url(<?php echo $image['url'] ?>);"><div class="overlay"></div></div>
                         <h4 class=""><?php echo $name_of_sport ?></h4>
                         <p class=""><?php echo $date_of_release ?></p>
                     </div>
