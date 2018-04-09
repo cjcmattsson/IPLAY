@@ -25,7 +25,9 @@ $fields = get_fields(2)
                 <div class="stakeholders"><p><?php echo $fields['general_stakeholders'] ?></p></div>
             </div>
         </div>
-
+        <div class="arrows-down">
+            <i class="material-icons">arrow_drop_down</i><i class="material-icons">arrow_drop_down</i>
+        </div>
 
 
     </div><!-- /col -->

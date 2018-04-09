@@ -1,0 +1,60 @@
+.cta-header {
+  margin: 0 auto;
+  margin-top: -35px;
+  margin-bottom: 70px;
+  width: 500px;
+}
+
+.content-cta {
+  height: 60vh;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+.line-cta-left, .line-cta-right {
+  height: 0;
+  width: 600px;
+  border: 1px solid $blueish;
+  position: absolute;
+  z-index: 1;
+}
+.line-cta-left {
+  transform: translateX(-450px) translateY(100px) rotate(25deg);
+  transform-origin: right;
+}
+.line-cta-right {
+  transform: translateX(400px) rotate(-25deg);
+  transform-origin: left;
+}
+  .cta-iphone {
+    width: 160px;
+    position: absolute;
+    transform: translateY(50px);
+    z-index: 4;
+  }
+
+  .triangle {
+    z-index: 3;
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-right-width: 200px;
+    border-left-width: 200px;
+    border-bottom: 400px solid $blueish;
+    margin-bottom: 80px;
+    margin-top: 25px;
+
+  }
+
+  .triangle-small {
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-right-width: 200px;
+    border-left-width: 200px;
+    border-bottom: 400px solid $blackish;
+    transform: translate(-200px, 1.5px) scale(0.985);
+  }
+}

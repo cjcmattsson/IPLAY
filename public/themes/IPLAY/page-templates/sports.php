@@ -55,6 +55,5 @@ $sports = collect(get_posts($args));
 
         </div>
 
-
     </div><!-- /col -->
 </div><!-- /row -->
