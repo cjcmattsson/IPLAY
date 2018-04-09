@@ -8,4 +8,4 @@ window.setInterval( function() {
 
   const superuserText = document.querySelector('.athlete-text');
   athleteText.appendChild(superuserText);
-}, 5000)
+}, 2500)

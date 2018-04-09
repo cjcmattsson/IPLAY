@@ -27,9 +27,9 @@
                         <?php  require __DIR__."/page-templates/sports.php";?>
                     </div>
 
-                    <!-- "Not Just For Players"-section -->
-                    <div id="stakeholders" class="one-page-section">
-                        <?php  require __DIR__."/page-templates/stakeholders.php";?>
+                    <!-- "Why IPLAY?"-section -->
+                    <div id="why" class="one-page-section">
+                        <?php  require __DIR__."/page-templates/whyiplay.php";?>
                     </div>
 
                     <!-- "Call to Action"-section -->
