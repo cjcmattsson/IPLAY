@@ -16,7 +16,7 @@ $params = array(
     'controls'    => 0,
     'hd'        => 1,
     'autohide'    => 1,
-    'autoplay'  => 0,
+    'autoplay'  => 1,
     'mute' => 1,
     'controls' => 0,
     'rel' => 0
@@ -35,7 +35,7 @@ $iframe = str_replace('></iframe>', ' ' . $attributes . '></iframe>', $iframe);
         <div class="hero-line-left"></div>
         <div class="hero-line-right"></div>
         <div class="embed-container video">
-            <?php echo $iframe; ?>
+            <!-- <?php echo $iframe; ?> -->
         </div>
         <img class="iphone" src="themes/IPLAY/assets/images/iphone.png" alt="">
         <div class="hero-text-cta">

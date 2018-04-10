@@ -1,5 +1,5 @@
-nav {
-  height: 80px;
+.menu-nav {
+  height: 65px;
   width: 100%;
   top: 0;
   left: 0;
@@ -8,6 +8,10 @@ nav {
   align-items: center;
   justify-content: flex-end;
   z-index: 100;
+  transition: all 0.5s ease;
+  @include bp(small) {
+    display: none!important;
+  };
 
   .logo {
     flex: 1;
@@ -39,7 +43,29 @@ nav {
     }
     a:hover {
       text-decoration: none;
-      color: $grape;
+      color: white;
     }
   }
+}
+
+.nav-back-color {
+  background-color: $blueish;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+li:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 3px;
+	width: 0px;
+	background: transparent;
+	transition: width .3s ease, background-color .3s ease-in-out;
+}
+li:hover:after {
+	width: 100%;
+	background: white;
 }
