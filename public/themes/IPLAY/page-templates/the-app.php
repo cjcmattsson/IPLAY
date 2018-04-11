@@ -27,8 +27,8 @@ $fields = get_fields(46);
                     <img class="arrow" src="themes/IPLAY/assets/images/arrow.png" alt="">
                 </div>
                 <div class="buttons the-app-buttons">
-                    <button type="button" name="button"><img class="apple-icon" src="themes/IPLAY/assets/images/apple.png" alt="">Download on the App Store</button>
-                    <button type="button" name="button"><i class="material-icons">android</i> Download on Google Play</button>
+                    <button type="button" name="button"><img class="apple-icon" src="themes/IPLAY/assets/images/apple.png" alt=""><span class="button-text">Download on the App Store</span></button>
+                    <button type="button" name="button"><i class="material-icons">android</i> <span class="button-text">Download on Google Play</span></button>
                 </div>
             </div>
 

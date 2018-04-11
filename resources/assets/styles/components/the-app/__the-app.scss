@@ -18,6 +18,9 @@
     left: 50%;
     top: -50%;
     transform: translate(-50%, 0);
+    @include bp(small) {
+      display: none;
+    };
   }
 
   .app-line-left {
@@ -38,6 +41,9 @@
 
   .iphone-left-back, .iphone-middle-front, .iphone-right-back {
     width: 180px;
+    @include bp(small) {
+    width: 220px;
+    };
   }
   .iphone-left-back {
     transform: translateX(80px);
@@ -53,6 +59,12 @@
     transform: translateX(-80px);
     z-index: 1;
   }
+
+  .iphone-left-back, .iphone-right-back {
+    @include bp(small) {
+    display: none;
+    };
+  }
 }
 
 .the-app-text-buttons {
@@ -65,18 +77,31 @@
   align-items: flex-end;
   margin-bottom: 15px;
   transform: translateX(-39px) translateY(-10px);
+  @include bp(small) {
+  transform: translateX(0) translateY(0);
+  justify-content: center;
+  margin: 20px 0 25px;
+  };
 
   p {
     height: 12px;
-    font-size: 12px;
+    font-size: 15px;
     color: $blueish;
     margin-bottom: 0;
+    @include bp(small) {
+    width: 240px;
+    text-align: center;
+    height: auto;
+    };
   }
 
   .arrow {
     height: 45px;
     margin-bottom: 2px;
     margin-left: 5px;
+    @include bp(small) {
+    display: none;
+    };
   }
 }
 }

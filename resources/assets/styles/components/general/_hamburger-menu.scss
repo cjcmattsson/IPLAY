@@ -1,6 +1,6 @@
 .mobile-nav {
   display: none!important;
-  background-color: $blackish;
+  // background-color: $blackish;
   position: absolute;
   width: 100%;
   @include bp(small) {
@@ -13,12 +13,14 @@
 
 
     .mobile-small-menu {
+      background-color: $blackish;
       padding-top: 100px;
       height: 100vh;
       position: fixed;
-      width: 150px;
+      width: 200px;
+      padding-left: 40px;
       top: 0;
-      right: -180px;
+      right: -220px;
       transition: all 0.5s ease-in-out;
     }
 

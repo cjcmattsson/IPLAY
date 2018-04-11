@@ -8,6 +8,9 @@
     flex-direction: column;
     padding-top: 60px;
     width: 100%;
+    @include bp(small) {
+      padding-top: 30px;
+    };
 
     .hero-line-left {
       top: 0;
@@ -33,13 +36,25 @@
       border: 1px solid $blueish;
     }
 
+    .hero-line-left, .hero-line-right {
+      @include bp(small) {
+        display:none;
+      }
+    }
+
     .iphone {
-      width: 450px;
+      width: 220px;
       position: absolute;
       right: 0;
-      transform: translateX(-80px) translateY(150px);
+      transform: translateX(-80px) translateY(90px);
       bottom: 0;
       z-index: 10;
+      @include bp(small) {
+        width: 200px;
+        left: 50%;
+         top: 90%;
+      transform: translate(-50%, -50%);
+      };
     }
   }
 
@@ -47,6 +62,10 @@
     height: 500px;
     width: 800px;
     z-index: 5;
+    @include bp(small) {
+      width: 100vw;
+      height: 265px;
+    }
 
     iframe {
       width: 100%;
@@ -61,6 +80,10 @@
     width: 100%;
     text-align: left;
     z-index: 10;
+    @include bp(small) {
+      padding-left: 0;
+      transform: translateY(-50px);
+    };
 
     .line {
       width: 371px;
@@ -73,6 +96,9 @@
     {
       font-weight: bold;
       color: $dark-grape;
+      @include bp(small) {
+        font-size: 35px;
+      };
 
       .green {
         color: $blueish;
@@ -91,6 +117,9 @@
       justify-content: space-around;
       font-size: 10px;
       padding-left: 100px;
+      @include bp(small) {
+        display: none;
+      };
     }
 
   }

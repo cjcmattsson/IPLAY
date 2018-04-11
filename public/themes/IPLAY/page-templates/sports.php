@@ -24,7 +24,7 @@ $sports = collect(get_posts($args));
                 <div class="sports-small-line right"></div>
             <div class="sports-header-right-line"></div>
         </div>
-
+        <div class="sports-line-mobile"></div>
         <div class="sports">
             <?php foreach($sports as $sport): ?>
                 <?php $post_id = $sport->ID; ?>

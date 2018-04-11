@@ -1,10 +1,35 @@
+#sports {
+  @include bp(small) {
+  height: 140vh;
+  };
+
+.sports-line-mobile {
+  @include bp(small) {
+    height: 130vh;
+    width: 0;
+    border: 1px solid $blueish;
+    position: absolute;
+    transform: translateX(-50%, -50%);
+    top: 10%;
+    left: 50%;
+    z-index: 0;
+  };
+}
+
+
 .sports-header {
   display: flex;
   flex-direction: row;
+  @include bp(small) {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+  };
 
 
 h1 {
   margin: 0 5px;
+
 }
 
 .sports-small-line {
@@ -12,6 +37,9 @@ h1 {
   height: 0px;
   border: 1px solid $blueish;
   margin: auto;
+  @include bp(small) {
+  display: none;
+  };
 }
 
   .sports-header-left-line, .sports-header-right-line {
@@ -19,6 +47,9 @@ h1 {
     height: 0px;
     border: 1px solid $blueish;
     margin: auto;
+    @include bp(small) {
+    display: none;
+    };
   }
 
 
@@ -44,6 +75,11 @@ h1 {
   margin-top: 80px;
   width: 80%;
   height: 300px;
+  @include bp(small) {
+  flex-direction: column;
+  height: 125vh;
+  margin-top: 15px;
+  };
 
   .single-sport {
     display: flex;
@@ -53,19 +89,27 @@ h1 {
     text-transform: uppercase;
     color: #75D5C6;
     margin: 25px;
+    @include bp(small) {
+    margin: 5px;
+    height: 250px!important;
+    };
 
     h4 {
-      margin: 10px 0 5px 0;
+      margin: 20px 0 0px 0;
       font-size: 20px;
     }
 
     p {
       font-size: 12px;
-      margin-bottom: 0;
+      margin-bottom: 10px;
     }
 
     h4, p {
       transform: translateX(-8px);
+      @include bp(small) {
+        transform: translateX(0);
+        background-color: black;
+      };
     }
 
     .image-sport {
@@ -98,5 +142,9 @@ h1 {
 
   .single-sport:nth-child(even) {
     transform: translateY(45px) translateX(-5px);
+    @include bp(small) {
+    transform: translateY(0) translateX(0);
+    };
   }
+}
 }

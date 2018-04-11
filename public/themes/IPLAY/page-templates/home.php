@@ -35,16 +35,16 @@ $iframe = str_replace('></iframe>', ' ' . $attributes . '></iframe>', $iframe);
         <div class="hero-line-left"></div>
         <div class="hero-line-right"></div>
         <div class="embed-container video">
-            <!-- <?php echo $iframe; ?> -->
+            <?php echo $iframe; ?>
         </div>
-        <img class="iphone" src="themes/IPLAY/assets/images/iphone.png" alt="">
+        <img class="iphone" src="themes/IPLAY/assets/images/iphone-small.png" alt="">
         <div class="hero-text-cta">
             <div class="line"></div>
             <h1><?php echo $hero_text ?></h1>
             <p><?php echo $sub_header ?></p>
             <div class="buttons">
-                <button type="button" name="button"><img class="apple-icon" src="themes/IPLAY/assets/images/apple.png" alt="">Download on the App Store</button>
-                <button type="button" name="button"><i class="material-icons">android</i> Download on Google Play</button>
+                <button type="button" name="button"><img class="apple-icon" src="themes/IPLAY/assets/images/apple.png" alt=""><span class="button-text">Download on the App Store</span></button>
+                <button type="button" name="button"><i class="material-icons">android</i> <span class="button-text">Download on Google Play</span></button>
             </div>
             <p class="explore"><i class="material-icons">arrow_drop_down</i><?php echo $explore ?><i class="material-icons">arrow_drop_down</i></p>
         </div>
