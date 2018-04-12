@@ -1,3 +1,9 @@
+#why {
+  @include bp(small) {
+    height: 120vh;
+  };
+}
+
 .why-content {
   height: 60vh;
   width: 80vw;
@@ -5,8 +11,50 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  @include bp(small) {
+    flex-direction: column;
+    height: 110vh;
+    width: auto;
+    height: auto;
+  }
 
-  .logo-why-section {
+
+.logo-why-section {
+  border: 2px solid #75D5C6;
+  width: 210px;
+  height: 240px;
+  transform: skewX(-7.5deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $blackish;
+  z-index: 10;
+
+  img {
+    width: 180px;
+    margin: auto;
+  }
+}
+
+.why-line-mobile {
+  display: none;
+  @include bp(small) {
+    display: block;
+    height: 70vh;
+    width: 0;
+    border: 1px solid $blueish;
+    position: absolute;
+    transform: translateX(-50%) translateY(200px);
+    top: 10%;
+    left: 50%;
+    z-index: 0;
+  };
+}
+
+.logo-why-section-mobile {
+  display: none;
+  @include bp(small) {
+    display: block;
     border: 2px solid #75D5C6;
     width: 210px;
     height: 240px;
@@ -22,12 +70,23 @@
       margin: auto;
     }
   }
+}
+
+  .logo-why-section {
+    @include bp(small) {
+      display: none;
+    }
+  }
 
   p {
     font-size: 14px;
     width: 220px;
     margin-bottom: 0;
     color: #75D5C6;
+    @include bp(small) {
+      width: 200px;
+
+    }
 
   }
 
@@ -37,6 +96,14 @@
   height: 80px;
   display: flex;
   align-items: flex-end;
+  @include bp(small) {
+    margin-top: 40px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: $blackish;
+  }
 }
 
 // LEFT
@@ -46,14 +113,30 @@
     height: 300px;
     text-align: left;
     justify-content: flex-start;
+    @include bp(small) {
+      justify-content: center;
+      text-align: center;
+      width: 80vw;
+      border: none;
+      height: auto;
+      transform: translate(0);
+    }
 
     .social-media, .communication {
       padding-right: 80px;
+      @include bp(small) {
+        padding-right: 0;
+      }
     }
     .communication {
       margin-top: 20px;
       transform: translateY(120px);
       border-right: 2px solid #75D5C6;
+      @include bp(small) {
+        margin-top: 40px;
+        border: none;
+        transform: translateY(0);
+      }
     }
   }
 
@@ -63,13 +146,25 @@
     height: 200px;
     transform: translateX(-45px);
     text-align: right;
-
+    @include bp(small) {
+      text-align: center;
+      width: 80vw;
+      height: auto;
+      border: none;
+      transform: translateX(0);
+    }
 
     .team{
       transform: translate(0, 30px);
       z-index: 1;
       justify-content: flex-end;
       padding-left: 50px;
+      @include bp(small) {
+        justify-content: center;
+        padding-left: 0;
+        border: none;
+        transform: translate(0);
+      }
     }
     .stakeholders{
       height: 100px;
@@ -78,6 +173,14 @@
       border-left: 2px solid #75D5C6;
       justify-content: flex-end;
       padding-left: 80px;
+      @include bp(small) {
+        margin-top: 40px;
+        height: auto;
+        justify-content: center;
+        padding-left: 0;
+        border: none;
+        transform: translate(0);
+      }
 
     }
   }

@@ -10,14 +10,19 @@ $fields = get_fields(2)
 
         <h1 class="section-header-text"><?php echo $fields['hero_text'] ?></h1>
 
+
         <div class="why-content">
+            <div class="why-line-mobile"></div>
+            <div class="logo-why-section-mobile">
+                <img class="" src="themes/IPLAY/assets/images/logo.svg" alt="">
+            </div>
             <div class="left-social-com">
                 <div class="social-media"><p><?php echo $fields['social_media'] ?></p></div>
                 <div class="communication"><p><?php echo $fields['communication'] ?></p></div>
             </div>
 
             <div class="logo-why-section">
-                <img class="" src="themes/IPLAY/assets/images/iplay.png" alt="">
+                <img class="" src="themes/IPLAY/assets/images/logo.svg" alt="">
             </div>
 
             <div class="right-team-stakeholders">

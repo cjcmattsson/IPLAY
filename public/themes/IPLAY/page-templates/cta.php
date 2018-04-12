@@ -19,10 +19,6 @@ $fields = get_fields(8)
             <img class="cta-iphone" src="themes/IPLAY/assets/images/iphone-small.png" alt="">
             <div class="line-cta-left"></div>
             <div class="line-cta-right"></div>
-            <div class="buttons the-app-buttons">
-                <button type="button" name="button"><img class="apple-icon" src="themes/IPLAY/assets/images/apple.png" alt=""><span class="button-text">Download on the App Store</span></button>
-                <button type="button" name="button"><i class="material-icons">android</i> <span class="button-text">Download on Google Play</span></button>
-            </div>
 
         </div>
 

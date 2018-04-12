@@ -152,6 +152,7 @@
         transition: all 500ms ease;
         @include bp(small) {
           text-align: center;
+          transform: translateY(50px);
         };
 
         .athletes-name, .athletes-club {

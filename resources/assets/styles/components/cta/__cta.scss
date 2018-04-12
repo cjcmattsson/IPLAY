@@ -3,6 +3,10 @@
   margin-top: -35px;
   margin-bottom: 70px;
   width: 500px;
+    @include bp(small) {
+      width: 80vw;
+      margin-bottom: 0;
+    }
 }
 
 .content-cta {
@@ -12,6 +16,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+
+
+.cta-buttons {
+  width: 400px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
 .line-cta-left, .line-cta-right {
   height: 0;
@@ -33,6 +47,11 @@
     position: absolute;
     transform: translateY(50px);
     z-index: 4;
+    @include bp(small) {
+      transform: translateY(0);
+      width: 240px;
+      margin-top: 35px;
+    }
   }
 
   .triangle {
@@ -56,5 +75,11 @@
     border-left-width: 200px;
     border-bottom: 400px solid $blackish;
     transform: translate(-200px, 1.5px) scale(0.985);
+  }
+
+  .triangle, .triangle-small, .line-cta-left, .line-cta-right {
+    @include bp(small) {
+      display: none;
+    };
   }
 }

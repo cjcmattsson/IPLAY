@@ -3,7 +3,7 @@
 
     <div class="social">
 
-    <img class="footer-logo" src="themes/IPLAY/assets/images/iplay.png" alt="">
+    <img class="footer-logo" src="themes/IPLAY/assets/images/logo.svg" alt="">
     <div class="social-media-links">
         <img class="footer-small-icon" src="themes/IPLAY/assets/images/facebook-logo-button.png" alt="">
         <img class="footer-small-icon" src="themes/IPLAY/assets/images/instagram-logo.png" alt="">

@@ -18,7 +18,7 @@
         <!-- WEB NAV -->
         <nav class="menu-nav" role="navigation">
             <div class="logo">
-                <a href="#home"><img src="themes/IPLAY/assets/images/iplay.png" alt=""></a>
+                <a href="#home"><img src="themes/IPLAY/assets/images/logo.svg" alt=""></a>
             </div>
             <?php wp_nav_menu(['theme_location' => 'primary-menu']); ?>
         </nav>
