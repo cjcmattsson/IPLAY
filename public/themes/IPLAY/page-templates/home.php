@@ -3,6 +3,20 @@
 <?php
 $fields = get_fields();
 $hero_text = $fields['hero_text'];
+
+$hero_sentence = explode(' ', $hero_text);
+$last_word = array_pop($hero_sentence);
+
+$lastSpacePosition = strrpos($hero_text, ' ');
+$textWithoutLastWord = substr($hero_text, 0, $lastSpacePosition);
+
+$line_break = array( '<br>' );
+
+$hero_array = explode (' ', $textWithoutLastWord);
+array_splice($hero_array, 2, 0, $line_break);
+$hero_string = implode(' ', $hero_array);
+
+
 $sub_header = $fields['hero_sub_header'];
 $explore = $fields['explore'];
 
@@ -40,7 +54,7 @@ $iframe = str_replace('></iframe>', ' ' . $attributes . '></iframe>', $iframe);
         <img class="iphone" src="themes/IPLAY/assets/images/iphone-small.png" alt="">
         <div class="hero-text-cta">
             <div class="line"></div>
-            <h1><?php echo $hero_text ?></h1>
+            <h1 class="section-header-text hero-header"><?php echo "$hero_string " ?><span class="purple-hero"><?php echo $last_word ?></span></h1>
             <p><?php echo $sub_header ?></p>
             <div class="buttons">
                 <button type="button" name="button"><img class="apple-icon" src="themes/IPLAY/assets/images/apple.png" alt=""><span class="button-text">Download on the App Store</span></button>

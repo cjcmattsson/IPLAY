@@ -135,9 +135,24 @@ h1 {
       width: 100%;
       height: 100%;
       background-color: #9B6DFF;
-      opacity: 0.6;
+      opacity: 0.3;
 
     }
+
+    .planned img {
+      opacity: 1;
+      position: absolute;
+      z-index: 100;
+      width: 50%;
+    }
+    .planned-overlay {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(#0a0000, 1);
+      opacity: 0.8;
+    }
+
+
   }
 
   .single-sport:nth-child(even) {

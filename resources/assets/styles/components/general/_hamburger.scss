@@ -25,24 +25,24 @@
 }
 
 .hamburger-box {
-  width: 35px;
+  width: 30px;
   height: 24px;
   display: inline-block;
   position: relative; }
 
 .hamburger-inner {
   display: block;
-  top: 50%;
-  margin-top: -2px; }
+  top: 45%; }
   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-    width: 35px;
-    height: 4px;
+    width: 30px;
+    height: 3px;
     background-color: $blueish;
-    border-radius: 4px;
     position: absolute;
     transition-property: transform;
     transition-duration: 0.15s;
-    transition-timing-function: ease; }
+    transition-timing-function: ease;
+    margin: auto;
+  }
   .hamburger-inner::before, .hamburger-inner::after {
     content: "";
     display: block; }
