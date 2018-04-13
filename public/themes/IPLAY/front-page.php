@@ -47,6 +47,7 @@
 
             </div>
             <div class="parallax__layer parallax__layer--back"></div>
+            <div class="parallax__layer parallax__layer--back2"></div>
         </div>
     </main>
 

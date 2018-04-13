@@ -8,7 +8,7 @@
   perspective: 330px;
   -webkit-perspective-origin-x: 100%;
   perspective-origin-x: 100%;
-  color: #fff
+  color: #fff;
 }
 .parallax__group {
   position: relative;
@@ -19,6 +19,7 @@
 }
 
 .parallax__layer {
+  background-size: cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -44,4 +45,18 @@
   background-position: center;
   margin-top: -250px;
   max-width: 100vw;
+}
+.parallax__layer--back2 {
+  z-index: 3;
+  -webkit-transform: translateZ(-200px) scale(2);
+  transform: translateZ(-200px) scale(2);
+  background-image: url("/themes/IPLAY/assets/images/vectooorz.svg");
+  opacity: 0.1;
+  background-color: rgba(#0a0000, 0.8);
+  max-width: 100vw;
+  height: 400vh;
+  @include bp(small) {
+    -webkit-transform: translateZ(-200px) scale(2);
+    transform: translateZ(-200px) scale(2);
+  };
 }

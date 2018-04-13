@@ -32,7 +32,7 @@ $params = array(
     'autohide'    => 1,
     'autoplay'  => 1,
     'mute' => 1,
-    'controls' => 0,
+    'loop' => 1,
     'rel' => 0
 );
 $new_src = add_query_arg($params, $src);
