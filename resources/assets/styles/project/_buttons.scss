@@ -17,7 +17,7 @@
     -webkit-box-shadow: 4px 4px 0px 0px $normal-green;
     -moz-box-shadow: 4px 4px 0px 0px $normal-green;
     box-shadow: 4px 4px 0px 0px $normal-green;
-    transition: all 0.1s ease-in-out;
+    transition: all 0.5s ease-in-out;
 
     .button-text {
       @include bp(small) {
