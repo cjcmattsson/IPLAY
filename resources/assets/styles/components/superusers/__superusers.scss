@@ -202,3 +202,12 @@
   };
 
 }
+
+.down-arrows-super {
+  display: flex;
+  flex-direction: row;
+  transform: translateY(25px);
+  @include bp(small) {
+    transform: translateY(0) translateX(-75px);
+  };
+}

@@ -39,9 +39,13 @@
       li {
         z-index: 100;
         margin: 5px;
+        text-align: center;
         a {
           text-transform: uppercase;
           color: white;
+          font-size: 20px;
+          border-bottom: 2px solid $blueish;
+
         }
         a:hover {
           text-decoration: none;
@@ -69,20 +73,6 @@
       display: flex;
       justify-content: center;
       align-items: center;
-    }
-
-    li:after {
-    	content: '';
-    	display: block;
-    	margin: auto;
-    	height: 2px;
-    	width: 0px;
-    	background: transparent;
-    	transition: width .3s ease, background-color .3s ease-in-out;
-    }
-    li:hover:after {
-    	width: 100%;
-    	background: $blueish;
     }
   };
 }

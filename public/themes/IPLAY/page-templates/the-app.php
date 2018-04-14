@@ -33,6 +33,10 @@ $fields = get_fields(46);
                 <button type="button" name="button"><i class="material-icons android">android</i> <span class="button-text">Download on Google Play</span></button>
             </div>
 
+            <div class="arrows-down">
+                <i class="material-icons">arrow_drop_down</i><i class="material-icons">arrow_drop_down</i>
+            </div>
+
 
     </div><!-- /col -->
 </div><!-- /row -->

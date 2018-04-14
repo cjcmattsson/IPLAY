@@ -47,6 +47,10 @@ $superusers = collect(get_posts($args))->shuffle()->take(6);
                     <div class="buttons">
                         <button type="button" name="button">Join now!</button>
                     </div>
+                    <div class="down-arrows-super">
+                        <i class="material-icons">arrow_drop_down</i>
+                        <i class="material-icons">arrow_drop_down</i>
+                    </div>
                 </div>
               </div>
 

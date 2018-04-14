@@ -16,24 +16,24 @@
 
     .hero-line-left {
       top: 0;
-      margin-top: -50px;
+      margin-top: 100px;
       left: 10;
       transform: translateX(-220px);
       position: absolute;
       z-index: 1;
-      height: 110vh;
+      height: 600px;
       width: 0;
       border: 1.5px solid $blueish;
     }
     .hero-line-right {
       top: 0;
-      margin-top: -50px;
+      margin-top: 100px;
       left: 10;
       transform: translateX(-180px);
       position: absolute;
       z-index: 1;
-      height: 500px;
-      max-height: 850px;
+      height: 400px;
+      max-height: 650px;
       width: 0;
       border: 1.5px solid $blueish;
     }
@@ -45,10 +45,10 @@
     }
 
     .iphone {
-      width: 220px;
+      width: 230px;
       position: absolute;
       right: 0;
-      transform: translateX(-80px) translateY(90px);
+      transform: translateX(-70px) translateY(90px);
       bottom: 0;
       z-index: 10;
       @include bp(small) {
@@ -65,7 +65,9 @@
     height: 450px;
     z-index: 1;
     transition: 2s all ease-in-out;
+    transform: translateX(100px) translateY(5px);
     @include bp(small) {
+      transform: translateX(0px);
       width: 100vw;
       height: 230px;
     }
