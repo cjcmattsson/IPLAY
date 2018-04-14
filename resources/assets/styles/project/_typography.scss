@@ -9,5 +9,8 @@ h1 {
   color: $blueish;
   font-weight: bold;
   font-size: 40px;
-  text-shadow: 2px 2px 0 $purple;
+  text-shadow: 2px 2px 0 $dark-grape;
+  @include bp(small) {
+    font-size: 35px;
+  };
 }

@@ -2,8 +2,16 @@
   display: flex;
   flex-direction: row;
   margin-bottom: 20px;
+  max-width: 390px;
+  @include bp(small) {
+    justify-content: space-around;
+    max-width: 343px;
+
+  };
 
   button {
+    padding: 5px;
+    padding-right: 8px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -13,11 +21,16 @@
     font-size: 10px;
     color: white;
     border: 2px solid $blueish;
-    background-color: $purple;
+    background-color: $dark-grape;
     -webkit-box-shadow: 4px 4px 0px 0px $blueish;
     -moz-box-shadow: 4px 4px 0px 0px $blueish;
     box-shadow: 4px 4px 0px 0px $blueish;
     transition: all 0.5s ease-in-out;
+    font-weight: 100;
+    @include bp(small) {
+      width: 150px;
+      margin-right: 0;
+    };
 
     .button-text {
       @include bp(small) {
@@ -25,8 +38,13 @@
       }
     }
 
+  .android {
+    font-size: 18px;
+  }
+
     .apple-icon {
-      width: 25px;
+      width: 18px;
+      margin-bottom: 2px;
     }
 
   }

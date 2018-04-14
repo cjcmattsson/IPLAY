@@ -1,6 +1,13 @@
 #why {
   @include bp(small) {
     height: 120vh;
+    padding-top: 150px;
+  };
+}
+
+.why-header {
+  @include bp(small) {
+    margin-bottom: 50px;
   };
 }
 
@@ -184,4 +191,8 @@
 
     }
   }
+}
+
+.arrows-down {
+  transform: translateY(50px);
 }

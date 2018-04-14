@@ -1,3 +1,11 @@
+#superusers {
+  height: auto;
+  padding-top: 70px;
+  @include bp(small) {
+    height: 85vh;
+  };
+}
+
 .header-super  {
   text-align: center;
   width: 300px;
@@ -25,6 +33,7 @@
     align-items: center;
     height: 50vh;
     width: 60vw;
+
     @include bp(small) {
       flex-direction: column-reverse;
       height: 80vh;
@@ -52,9 +61,10 @@
         height: 210px;
         top: 0;
         left: 0;
-        transform: skewX(-7.5deg);
+        transform: skewX(-7.5deg) translate(30%, 16%);
         transition: all 500ms ease;
         overflow: hidden;
+        opacity: 0;
 
 
       .image-super {
@@ -64,6 +74,7 @@
         transform: skewX(7.5deg);
         width: 220px;
         height: 210px;
+
 
       }
 
@@ -101,28 +112,31 @@
       .cta-super {
         padding-bottom: 20px;
         height: 50%;
-        width: 100%;
+        width: 220px;
         flex-direction: column;
-        align-items: flex-end;
+        align-items: flex-start;
         padding-right: 20px;
+        background-color: $blackish;
+        margin-left: 80px;
         @include bp(small) {
-          margin-top: 40px;
+          margin-left: 0px;
+          width: 100%;
+          margin-top: 10px;
           align-items: center;
           padding: 0;
         };
 
         button {
+          font-size: 15px;
           @include bp(small) {
           width: 200px;
           text-align: center;
           margin: auto;
-          font-size: 15px;
           };
         }
 
         p {
-          margin-bottom: 0;
-          width: 175px;
+          width: 200px;
           font-size: 15px;
           background-color: black;
           @include bp(small) {

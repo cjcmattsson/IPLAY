@@ -7,7 +7,7 @@ $args = array(
     'post_type' => 'superuser',
     'order' => 'DESC',
 );
-$superusers = collect(get_posts($args))->shuffle()->take(3);
+$superusers = collect(get_posts($args))->shuffle()->take(6);
 
 // foreach($superusers as $user) {
 //     $post_id = $user->ID;
@@ -43,9 +43,9 @@ $superusers = collect(get_posts($args))->shuffle()->take(3);
                     <?php endforeach; ?>
                 </div>
                 <div class="cta-super">
-                    <p>Join IPLAY and become a Superuser too</p>
+                    <p>Join IPLAY now and become a Superuser too</p>
                     <div class="buttons">
-                        <button type="button" name="button">Join IPLAY</button>
+                        <button type="button" name="button">Join now!</button>
                     </div>
                 </div>
               </div>

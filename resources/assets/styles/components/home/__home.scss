@@ -8,6 +8,7 @@
     flex-direction: column;
     padding-top: 60px;
     width: 100%;
+    // background-color: rgba(0, 0, 0, 0.64);
     @include bp(small) {
       padding-top: 30px;
     };
@@ -89,11 +90,18 @@
       text-align: left;
     }
 
+    .sub-header {
+      width: 250px;
+    }
+
     .line {
       width: 371px;
       height: 0;
       margin-left: -200px;
       border: 1px solid $blueish;
+      @include bp(small) {
+        width: 351px;
+      };
     }
 
     h1
@@ -105,7 +113,7 @@
       };
 
       .purple-hero {
-        color: $purple;
+        color: $dark-grape;
         text-shadow: 2px 2px 0 $blueish;
       }
     }

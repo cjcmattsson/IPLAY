@@ -1,31 +1,36 @@
-.cta-header {
-  margin: 0 auto;
-  margin-top: -35px;
-  margin-bottom: 70px;
-  width: 500px;
-    @include bp(small) {
-      width: 80vw;
-      margin-bottom: 0;
-    }
+#cta {
+  padding-top: 20px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.cta-header-and-tagline {
+  margin: auto;
+  margin-bottom: 50px;
+  @include bp(small) {
+    width: 80vw;
+    margin-bottom: 0;
+  }
+  p {
+    margin: auto;
+    text-align: center;
+  }
+  .cta-header {
+    margin: 0 auto;
+  }
 }
 
 .content-cta {
+  margin-top: 50px;
   height: 60vh;
   width: 80vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-
-
-.cta-buttons {
-  width: 400px;
-  margin: auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
+  @include bp(small) {
+    margin-top: 10px;
+  };
 
 .line-cta-left, .line-cta-right {
   height: 0;
@@ -43,13 +48,13 @@
   transform-origin: left;
 }
   .cta-iphone {
-    width: 160px;
+    width: 180px;
     position: absolute;
-    transform: translateY(50px);
+    transform: translateY(30px);
     z-index: 4;
     @include bp(small) {
       transform: translateY(0);
-      width: 240px;
+      width: 220px;
       margin-top: 35px;
     }
   }
@@ -81,5 +86,26 @@
     @include bp(small) {
       display: none;
     };
+  }
+
+  .cta-buttons {
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transform: translate(11.5px, 25px);
+
+    @include bp(small) {
+      width: 342px;
+      transform: translate(-5px, 315px);
+    };
+
+    button {
+      @include bp(small) {
+        width: 150px;
+        margin-right: 0;
+
+      };
+    }
   }
 }

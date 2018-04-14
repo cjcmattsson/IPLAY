@@ -1,11 +1,12 @@
 #sports {
   @include bp(small) {
+    padding-top: 50px;
   height: 140vh;
   };
 
 .sports-line-mobile {
   @include bp(small) {
-    height: 130vh;
+    height: 120vh;
     width: 0;
     border: 1px solid $blueish;
     position: absolute;

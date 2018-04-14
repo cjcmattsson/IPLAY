@@ -8,7 +8,7 @@ $fields = get_fields(2)
 <div class="row">
     <div class="col">
 
-        <h1 class="section-header-text"><?php echo $fields['hero_text'] ?></h1>
+        <h1 class="section-header-text why-header"><?php echo $fields['hero_text'] ?></h1>
 
 
         <div class="why-content">

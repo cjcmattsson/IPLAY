@@ -1,6 +1,22 @@
+#app {
+  padding-top: 80px;
+  height: auto;
+  .row {
+    width: 100%;
+
+    .col {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+}
+
+
 .the-app-header {
   margin-bottom: 55px;
-  margin-top: 65px;
+  margin-top: 25px;
 }
 
 .the-app-cross {
@@ -8,6 +24,9 @@
   width: 750px;
   height: 400px;
   margin: auto;
+  @include bp(small) {
+    display: none;
+  };
 
   .app-line-left, .app-line-right {
     margin: auto;
@@ -18,9 +37,6 @@
     left: 50%;
     top: -50%;
     transform: translate(-50%, 0);
-    @include bp(small) {
-      display: none;
-    };
   }
 
   .app-line-left {
@@ -38,6 +54,9 @@
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  @include bp(small) {
+  width: inherit;
+  };
 
   .iphone-left-back, .iphone-middle-front, .iphone-right-back {
     width: 180px;
@@ -69,6 +88,9 @@
 
 .the-app-text-buttons {
   margin-bottom: 25px;
+  @include bp(small) {
+    margin-bottom: 10px;
+  };
 
 
 .arrow-cta-text {
@@ -76,16 +98,16 @@
   flex: row;
   align-items: flex-end;
   margin-bottom: 15px;
-  transform: translateX(-39px) translateY(-10px);
+  transform: translateX(-152.5px) translateY(-8px);
   @include bp(small) {
   transform: translateX(0) translateY(0);
   justify-content: center;
-  margin: 20px 0 25px;
+  margin: 20px 0 20px;
   };
 
   p {
     height: 12px;
-    font-size: 15px;
+    font-size: 13px;
     color: $blueish;
     margin-bottom: 0;
     @include bp(small) {
@@ -97,7 +119,7 @@
 
   .arrow {
     height: 45px;
-    margin-bottom: 2px;
+    margin-bottom: -2px;
     margin-left: 5px;
     @include bp(small) {
     display: none;
@@ -106,12 +128,33 @@
 }
 }
 
+.about-iplay {
+  line-height: 1.2;
+  font-size: 15px;
+  width: 90%;
+  padding-left: 20px;
+  height: auto;
+  text-align: left;
+  line-height: 16px;
+  margin-bottom: 35px;
+  @include bp(small) {
+    width: 80%;
+    line-height: 2;
+    text-align: center;
+  };
+}
+
 .the-app-buttons {
-  width: 400px;
+  width: 392px;
+  margin-right: 20px;
   margin: auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  @include bp(small) {
+    width: 342px;
+    margin-right: 0;
+  };
 
   button {
     margin-right: 0;

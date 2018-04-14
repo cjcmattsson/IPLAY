@@ -1,5 +1,7 @@
 
 <?php get_header(); ?>
+<div class="scroll-text-left"><i class="material-icons">arrow_drop_down</i>Scroll</div>
+<div class="scroll-text-right"><i class="material-icons">arrow_drop_down</i>Scroll</div>
 <div class="parallax">
     <main role="main" class="wrapper">
         <?php if (have_posts()): while (have_posts()): echo the_post(); ?>
@@ -12,11 +14,15 @@
                         <?php  require __DIR__."/page-templates/home.php";?>
                     </div>
 
+                    <!-- "Why IPLAY?"-section -->
+                    <div id="why" class="one-page-section">
+                        <?php  require __DIR__."/page-templates/whyiplay.php";?>
+                    </div>
+
                     <!-- Superusers -->
                     <div id="superusers" class="one-page-section">
                         <?php  require __DIR__."/page-templates/superusers.php";?>
                     </div>
-
                     <!-- "The App"-section -->
                     <div id="app" class="one-page-section">
                         <?php  require __DIR__."/page-templates/the-app.php";?>
@@ -27,13 +33,9 @@
                         <?php  require __DIR__."/page-templates/sports.php";?>
                     </div>
 
-                    <!-- "Why IPLAY?"-section -->
-                    <div id="why" class="one-page-section">
-                        <?php  require __DIR__."/page-templates/whyiplay.php";?>
-                    </div>
 
                     <!-- "Call to Action"-section -->
-                    <div class="one-page-section">
+                    <div id="cta" class="one-page-section">
                         <?php  require __DIR__."/page-templates/cta.php";?>
                     </div>
 
@@ -47,7 +49,7 @@
 
             </div>
             <div class="parallax__layer parallax__layer--back"></div>
-            <div class="parallax__layer parallax__layer--back2"></div>
+            <div class="parallax__layer parallax__layer--back-vectors"></div>
         </div>
     </main>
 
