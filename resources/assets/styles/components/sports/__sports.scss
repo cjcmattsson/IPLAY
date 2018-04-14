@@ -8,7 +8,7 @@
   @include bp(small) {
     height: 120vh;
     width: 0;
-    border: 1px solid $blueish;
+    border: 1.5px solid $blueish;
     position: absolute;
     transform: translateX(-50%);
     top: 10%;
@@ -36,7 +36,7 @@ h1 {
 .sports-small-line {
   width: 15px;
   height: 0px;
-  border: 1px solid $blueish;
+  border: 1.5px solid $blueish;
   margin: auto;
   @include bp(small) {
   display: none;
@@ -46,7 +46,7 @@ h1 {
   .sports-header-left-line, .sports-header-right-line {
     width: 800px;
     height: 0px;
-    border: 1px solid $blueish;
+    border: 1.5px solid $blueish;
     margin: auto;
     @include bp(small) {
     display: none;
@@ -114,7 +114,7 @@ h1 {
     }
 
     .image-sport {
-      border: 2px solid #75D5C6;
+      border: 3px solid #75D5C6;
       width: 160px;
       height: 190px;
       transform: skewX(-7.5deg);

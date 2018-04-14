@@ -2,7 +2,8 @@
   height: auto;
   padding-top: 70px;
   @include bp(small) {
-    height: 85vh;
+    height: 100vh;
+    padding-top: 10px;
   };
 }
 

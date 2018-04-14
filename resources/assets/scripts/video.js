@@ -1,12 +1,19 @@
 const content = document.querySelector('.parallax');
-const nav = document.querySelector('.menu-nav');
 const video = document.querySelector('.video');
+
+
+
+console.log(window.innerWidth);
+
+if (window.innerWidth > 415) {
+  console.log("hej");
+}
+
 
 content.addEventListener('scroll', function() {
   let scroll = content.scrollTop;
-  // console.log(scroll);
   if (scroll >= 200) {
-    nav.classList.add('nav-back-color');
+    video.style.width = "300px";
   } else if (scroll < 200) {
     nav.classList.remove('nav-back-color');
   }

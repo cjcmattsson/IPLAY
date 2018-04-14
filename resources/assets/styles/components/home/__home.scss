@@ -2,6 +2,7 @@
   height: 100%;
   width: 100%;
 
+
   .col {
     display: flex;
     align-items: center;
@@ -22,7 +23,7 @@
       z-index: 1;
       height: 110vh;
       width: 0;
-      border: 1px solid $blueish;
+      border: 1.5px solid $blueish;
     }
     .hero-line-right {
       top: 0;
@@ -34,7 +35,7 @@
       height: 500px;
       max-height: 850px;
       width: 0;
-      border: 1px solid $blueish;
+      border: 1.5px solid $blueish;
     }
 
     .hero-line-left, .hero-line-right {
@@ -60,12 +61,13 @@
   }
 
   .embed-container.video {
-    height: 500px;
     width: 800px;
-    z-index: 5;
+    height: 450px;
+    z-index: 1;
+    transition: 2s all ease-in-out;
     @include bp(small) {
       width: 100vw;
-      height: 265px;
+      height: 230px;
     }
 
     iframe {
@@ -83,7 +85,7 @@
     z-index: 10;
     @include bp(small) {
       padding-left: 0;
-      transform: translateY(-50px);
+      transform: translateY(-45px);
     };
 
     .hero-header {
@@ -98,7 +100,7 @@
       width: 371px;
       height: 0;
       margin-left: -200px;
-      border: 1px solid $blueish;
+      border: 1.5px solid $blueish;
       @include bp(small) {
         width: 351px;
       };

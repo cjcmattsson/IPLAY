@@ -35,7 +35,7 @@
 .line-cta-left, .line-cta-right {
   height: 0;
   width: 600px;
-  border: 1px solid $blueish;
+  border: 1.5px solid $blueish;
   position: absolute;
   z-index: 1;
 }
@@ -79,7 +79,7 @@
     border-right-width: 200px;
     border-left-width: 200px;
     border-bottom: 400px solid $blackish;
-    transform: translate(-200px, 1.5px) scale(0.985);
+    transform: translate(-200px, 1.5px) scale(0.980);
   }
 
   .triangle, .triangle-small, .line-cta-left, .line-cta-right {

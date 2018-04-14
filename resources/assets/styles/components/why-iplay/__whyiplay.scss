@@ -27,7 +27,7 @@
 
 
 .logo-why-section {
-  border: 2px solid #75D5C6;
+  border: 3px solid $blueish;
   width: 210px;
   height: 240px;
   transform: skewX(-7.5deg);
@@ -49,7 +49,7 @@
     display: block;
     height: 70vh;
     width: 0;
-    border: 1px solid $blueish;
+    border: 1.5px solid $blueish;
     position: absolute;
     transform: translateX(-50%) translateY(200px);
     top: 10%;
@@ -62,7 +62,7 @@
   display: none;
   @include bp(small) {
     display: block;
-    border: 2px solid #75D5C6;
+    border: 3px solid #75D5C6;
     width: 210px;
     height: 240px;
     transform: skewX(-7.5deg);
@@ -99,7 +99,7 @@
 
 // ALL
 .social-media, .communication, .team, .stakeholders {
-  border-bottom: 2px solid #75D5C6;
+  border-bottom: 3px solid #75D5C6;
   height: 80px;
   display: flex;
   align-items: flex-end;
@@ -138,7 +138,7 @@
     .communication {
       margin-top: 20px;
       transform: translateY(120px);
-      border-right: 2px solid #75D5C6;
+      border-right: 3px solid #75D5C6;
       @include bp(small) {
         margin-top: 40px;
         border: none;
@@ -177,7 +177,7 @@
       height: 100px;
       margin-top: 20px;
       transform: translate(0, 80px);
-      border-left: 2px solid #75D5C6;
+      border-left: 3px solid #75D5C6;
       justify-content: flex-end;
       padding-left: 80px;
       @include bp(small) {
