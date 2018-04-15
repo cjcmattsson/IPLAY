@@ -48,11 +48,17 @@ h1 {
     height: 0px;
     border: 1.5px solid $blueish;
     margin: auto;
+    transition: all 2s ease;
+    opacity: 0.5;
     @include bp(small) {
     display: none;
     };
   }
 
+
+  .test {
+    opacity: 1!important;
+  }
 
   .sports-header-left-line {
     transform: rotate(-12.5deg) translateY(-0.1px);

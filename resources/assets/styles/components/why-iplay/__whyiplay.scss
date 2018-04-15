@@ -97,12 +97,17 @@
 
   }
 
+  .new-width {
+    width: 370px!important;
+  }
+
 // ALL
 .social-media, .communication, .team, .stakeholders {
   border-bottom: 3px solid #75D5C6;
   height: 80px;
   display: flex;
   align-items: flex-end;
+  transition: all 2s ease;
   @include bp(small) {
     margin-top: 40px;
     height: auto;
@@ -116,10 +121,11 @@
 // LEFT
   .left-social-com {
     transform: translate(20px, 0);
-    width: 400px;
+    width: 200px;
     height: 300px;
     text-align: left;
     justify-content: flex-start;
+    transition: all 2s ease;
     @include bp(small) {
       justify-content: center;
       text-align: center;
@@ -149,10 +155,11 @@
 
 // RIGHT
   .right-team-stakeholders {
-    width: 400px;
+    width: 200px;
     height: 200px;
     transform: translateX(-45px);
     text-align: right;
+    transition: all 2s ease;
     @include bp(small) {
       text-align: center;
       width: 80vw;
