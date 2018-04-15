@@ -117,8 +117,9 @@
         flex-direction: column;
         align-items: flex-start;
         padding-right: 20px;
-        background-color: $blackish;
+        background: inherit;
         margin-left: 80px;
+        z-index: 100;
         @include bp(small) {
           margin-left: 0px;
           width: 100%;
@@ -139,7 +140,6 @@
         p {
           width: 200px;
           font-size: 15px;
-          background-color: black;
           @include bp(small) {
           width: 230px;
           text-align: center;
@@ -195,7 +195,7 @@
   width: 120vw;
   transform: translateY(-500px) translateX(-300px);
   position: absolute;
-  z-index: 1;
+  z-index: -1;
   @include bp(small) {
     display: none;
 

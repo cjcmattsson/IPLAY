@@ -12,6 +12,11 @@
   }
 }
 
+.longer {
+  height: 750px!important;
+  top: -50%!important;
+}
+
 
 .the-app-header {
   margin-bottom: 55px;
@@ -30,12 +35,13 @@
   .app-line-left, .app-line-right {
     margin: auto;
     position: absolute;
-    height: 750px;
+    height: 300px;
     width: 0;
     border: 1.5px solid $blueish;
-    left: 50%;
-    top: -50%;
     transform: translate(-50%, 0);
+    transition: all 1s ease;
+    top: 0px;
+    left: 50%;
   }
 
   .app-line-left {
@@ -159,8 +165,4 @@
   button {
     margin-right: 0;
   }
-}
-
-.hej {
-  border: 1.5px solid red;
 }

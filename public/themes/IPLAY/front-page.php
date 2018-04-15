@@ -14,15 +14,15 @@
                         <?php  require __DIR__."/page-templates/home.php";?>
                     </div>
 
+                    <!-- Superusers -->
+                    <div id="superusers" class="one-page-section">
+                        <?php  require __DIR__."/page-templates/superusers.php";?>
+                    </div>
                     <!-- "Why IPLAY?"-section -->
                     <div id="why" class="one-page-section">
                         <?php  require __DIR__."/page-templates/whyiplay.php";?>
                     </div>
 
-                    <!-- Superusers -->
-                    <div id="superusers" class="one-page-section">
-                        <?php  require __DIR__."/page-templates/superusers.php";?>
-                    </div>
                     <!-- "The App"-section -->
                     <div id="app" class="one-page-section">
                         <?php  require __DIR__."/page-templates/the-app.php";?>
