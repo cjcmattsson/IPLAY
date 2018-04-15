@@ -20,7 +20,7 @@ $sports = collect(get_posts($args));
         <div class="sports-header">
             <div class="sports-header-left-line left"></div>
                 <div class="sports-small-line left-small"></div>
-            <h1 class="section-header-text sports-header"><?php echo $fields['hero_text'] ?></h1>
+            <h1 class="section-header-text sports-header">Featured<br>Sports</h1>
                 <div class="sports-small-line right"></div>
             <div class="sports-header-right-line"></div>
         </div>
