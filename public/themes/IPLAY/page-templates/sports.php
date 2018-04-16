@@ -5,7 +5,7 @@ $fields = get_fields(72);
 
 $args = array(
     'post_type' => 'sports',
-    'order' => 'DESC',
+    'order' => 'ASC',
     'numberposts' => 4
 );
 
