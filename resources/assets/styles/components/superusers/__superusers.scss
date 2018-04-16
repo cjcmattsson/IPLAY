@@ -210,7 +210,7 @@
   z-index: -1;
   stroke-dasharray: 1516;
   stroke-dashoffset: 1576;
-  transition: all 1.2s cubic-bezier(.26,.23,.16,.26);
+  transition: all 1.7s cubic-bezier(.26,.23,.16,.26);
   // animation: draw 1.2s cubic-bezier(.26,.23,.16,.26) 3s 1 normal forwards;
   @include bp(small) {
     display: none;
