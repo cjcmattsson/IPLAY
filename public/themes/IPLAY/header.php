@@ -29,7 +29,10 @@
         <!-- MOBILE NAV -->
         <nav class="mobile-nav" role="navigation">
             <div class="logo-mobile">
-                <a href="#home"><img src="themes/IPLAY/assets/images/iplay.png" alt=""></a>
+                <a href="#home"><img src="<?php
+                    $variable = get_field('logotype', 'option');
+                    echo $variable['url'];
+                 ?>" alt=""></a>
             </div>
             <button class="hamburger hamburger--spin" type="button">
               <span class="hamburger-box">
