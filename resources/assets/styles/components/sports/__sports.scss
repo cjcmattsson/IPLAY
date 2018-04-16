@@ -6,7 +6,7 @@
 
 .sports-line-mobile {
   @include bp(small) {
-    height: 120vh;
+    height: 10vh;
     width: 0;
     border: 1.5px solid $blueish;
     position: absolute;
@@ -14,6 +14,13 @@
     top: 10%;
     left: 50%;
     z-index: 0;
+    transition: all 2.5s ease-in 0.5s;
+  };
+}
+
+.longer-sports-line {
+  @include bp(small) {
+    height: 120vh!important;
   };
 }
 

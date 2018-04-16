@@ -45,13 +45,18 @@
       width: 300px
 
     };
-    img {
+    .footer-small-icon {
       margin-right: 20px;
       width: 20px;
+      transition: all 0.3s ease-in-out;
       @include bp(small) {
         margin-right: 0;
 
       };
+    }
+    .footer-small-icon:hover {
+      transform: scale(1.3);
+      cursor: pointer;
     }
   }
 
@@ -91,6 +96,11 @@
 
       p {
         font-size: 12px;
+      }
+
+      p:hover {
+        cursor: pointer;
+        color: $blueish;
       }
 
     }

@@ -25,7 +25,7 @@
     -webkit-box-shadow: 4px 4px 0px 0px $blueish;
     -moz-box-shadow: 4px 4px 0px 0px $blueish;
     box-shadow: 4px 4px 0px 0px $blueish;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
     font-weight: 100;
     @include bp(small) {
       width: 150px;
@@ -54,6 +54,7 @@
     -moz-box-shadow: 1px 1px 0px 0px $normal-green;
     box-shadow: 1px 1px 0px 0px $normal-green;
     transform: translateY(2px);
+    cursor: pointer;
   }
 
 }

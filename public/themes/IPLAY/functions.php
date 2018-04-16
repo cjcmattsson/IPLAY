@@ -5,10 +5,14 @@ declare(strict_types=1);
 // Register plugin helpers.
 require template_path('includes/plugins/plate.php');
 
-// Register employee custom post type.
+// Register superusers and sports.
 require get_template_directory().'/post-types/superuser.php';
 require get_template_directory().'/post-types/sports.php';
-// require get_template_directory().'/post-types/footer.php';
+
+// Options page
+if( function_exists('acf_add_options_page') ) {
+	acf_add_options_page();
+}
 
 // Set theme defaults.
 add_action('after_setup_theme', function () {

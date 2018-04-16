@@ -9,11 +9,6 @@ $args = array(
 );
 $superusers = collect(get_posts($args))->shuffle()->take(6);
 
-// foreach($superusers as $user) {
-//     $post_id = $user->ID;
-//     var_dump(get_field('featured', $post_id));
-// };
-
 ?>
 
 <div class="row">
@@ -46,7 +41,7 @@ $superusers = collect(get_posts($args))->shuffle()->take(6);
                     <div class="buttons">
                         <button type="button" name="button">Join now!</button>
                     </div>
-                    <p>Join IPLAY now and become a Superuser too</p>
+                    <p><?php echo $fields['cta_superusers'] ?></p>
                     <div class="down-arrows-super">
                         <i class="material-icons">arrow_drop_down</i>
                         <i class="material-icons">arrow_drop_down</i>

@@ -210,7 +210,8 @@
   z-index: -1;
   stroke-dasharray: 1516;
   stroke-dashoffset: 1576;
-  animation: draw 1.2s cubic-bezier(.26,.23,.16,.26) 3s 1 normal forwards;
+  transition: all 1.2s cubic-bezier(.26,.23,.16,.26);
+  // animation: draw 1.2s cubic-bezier(.26,.23,.16,.26) 3s 1 normal forwards;
   @include bp(small) {
     display: none;
 
@@ -218,11 +219,15 @@
 
 }
 
-@keyframes draw {
-  from {
-    stroke-dashoffset: 1576;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
+.line-animate-super {
+  stroke-dashoffset: 0;
 }
+
+// @keyframes draw {
+//   from {
+//     stroke-dashoffset: 1576;
+//   }
+//   to {
+//     stroke-dashoffset: 0;
+//   }
+// }

@@ -9,7 +9,7 @@ $fields = get_fields(8)
 
         <div class="cta-header-and-tagline">
             <h1 class="section-header-text cta-header"><?php echo $fields['hero_text'] ?></h1>
-            <p class="subheader-cta">Be a part of the future in sports</p>
+            <p class="subheader-cta"><?php echo $fields['subheader_cta'] ?></p>
         </div>
 
         <div class="content-cta">

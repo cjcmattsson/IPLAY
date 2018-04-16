@@ -39,10 +39,7 @@ infoLines.forEach((line) => {
 const textWhy = [communication, socialMedia, stakeholders, team]
 
 function onIntersectionText(entries) {
-  // Loop through the entries
   entries.forEach(entry => {
-    // Are we in viewport?
-    console.log("fuck");
     if (entry.intersectionRatio > 0.5) {
         entry.target.classList.add('show-text')
     }
@@ -57,13 +54,12 @@ textWhy.forEach((text) => {
 
 });
 
+
 // Line for Mobile
 const lineMobile = [lineWhyMobile]
 
 function onIntersectionMobileLine(entries) {
-  // Loop through the entries
   entries.forEach(entry => {
-    // Are we in viewport?
     if (entry.intersectionRatio > 1) {
         entry.target.classList.add('line-longer-mobile')
     }

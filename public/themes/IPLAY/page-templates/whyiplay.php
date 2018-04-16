@@ -14,7 +14,10 @@ $fields = get_fields(2)
         <div class="why-content">
             <div class="why-line-mobile"></div>
             <div class="logo-why-section-mobile">
-                <img class="" src="themes/IPLAY/assets/images/logo.svg" alt="">
+                <img class="" src="<?php
+                    $variable = get_field('logotype', 'option');
+                    echo $variable['url'];
+                 ?>" alt="">
             </div>
             <div class="left-social-com">
                 <div class="social-media"><p><?php echo $fields['social_media'] ?></p></div>
@@ -22,7 +25,10 @@ $fields = get_fields(2)
             </div>
 
             <div class="logo-why-section">
-                <img class="" src="themes/IPLAY/assets/images/logo.svg" alt="">
+                <img class="" src="<?php
+                    $variable = get_field('logotype', 'option');
+                    echo $variable['url'];
+                 ?>" alt="">
             </div>
 
             <div class="right-team-stakeholders">
