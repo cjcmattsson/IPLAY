@@ -47,7 +47,7 @@
   display: none;
   @include bp(small) {
     display: block;
-    height: 70vh;
+    height: 10vh;
     width: 0;
     border: 1.5px solid $blueish;
     position: absolute;
@@ -55,7 +55,12 @@
     top: 10%;
     left: 50%;
     z-index: 0;
+    transition: all 2s ease-in 0.5s;
   };
+}
+
+.line-longer-mobile {
+  height: 70vh;
 }
 
 .logo-why-section-mobile {
@@ -107,7 +112,6 @@
   height: 80px;
   display: flex;
   align-items: flex-end;
-  transition: all 2s ease;
   @include bp(small) {
     margin-top: 40px;
     height: auto;
@@ -118,6 +122,18 @@
   }
 }
 
+.social-media p, .communication p, .team p, .stakeholders p {
+  opacity: 0;
+  transition: all 1s ease 1.2s;
+  @include bp(small) {
+    transition: all 1s ease;
+  };
+}
+
+.show-text {
+  opacity: 1!important;
+}
+
 // LEFT
   .left-social-com {
     transform: translate(20px, 0);
@@ -125,7 +141,7 @@
     height: 300px;
     text-align: left;
     justify-content: flex-start;
-    transition: all 2s ease;
+    transition: all 1.5s ease;
     @include bp(small) {
       justify-content: center;
       text-align: center;
@@ -159,7 +175,7 @@
     height: 200px;
     transform: translateX(-45px);
     text-align: right;
-    transition: all 2s ease;
+    transition: all 1.5s ease;
     @include bp(small) {
       text-align: center;
       width: 80vw;

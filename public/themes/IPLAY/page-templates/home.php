@@ -34,8 +34,7 @@ $params = array(
     'mute' => 1,
     'showinfo' => 0,
     'loop' => 1,
-    'rel' => 0,
-    'end' => 3
+    'rel' => 0
 );
 $new_src = add_query_arg($params, $src);
 $iframe = str_replace($src, $new_src, $iframe);

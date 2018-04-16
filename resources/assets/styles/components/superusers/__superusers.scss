@@ -111,7 +111,6 @@
       }
 
       .cta-super {
-        padding-bottom: 20px;
         height: 50%;
         width: 220px;
         flex-direction: column;
@@ -125,6 +124,7 @@
           width: 100%;
           margin-top: 10px;
           align-items: center;
+          flex-direction: column-reverse;
           padding: 0;
         };
 
@@ -140,10 +140,21 @@
         p {
           width: 200px;
           font-size: 15px;
+          margin-bottom: 0;
+          padding-top: 25px;
           @include bp(small) {
           width: 230px;
           text-align: center;
           margin-bottom: 10px;
+          padding-top: 0;
+          };
+        }
+        .down-arrows-super {
+          display: flex;
+          flex-direction: row;
+          transform: translateY(5px);
+          @include bp(small) {
+            transform: translateY(125px) translateX(-75px);
           };
         }
       }
@@ -193,9 +204,13 @@
 .line-super {
   height: auto;
   width: 120vw;
-  transform: translateY(-500px) translateX(-300px);
+  transform: translateY(-300px) translateX(-300px);
   position: absolute;
+  left: 0;
   z-index: -1;
+  stroke-dasharray: 1516;
+  stroke-dashoffset: 1576;
+  animation: draw 1.2s cubic-bezier(.26,.23,.16,.26) 3s 1 normal forwards;
   @include bp(small) {
     display: none;
 
@@ -203,11 +218,11 @@
 
 }
 
-.down-arrows-super {
-  display: flex;
-  flex-direction: row;
-  transform: translateY(25px);
-  @include bp(small) {
-    transform: translateY(0) translateX(-75px);
-  };
+@keyframes draw {
+  from {
+    stroke-dashoffset: 1576;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
 }

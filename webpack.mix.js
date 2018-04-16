@@ -21,4 +21,5 @@ mix.setPublicPath(`public/themes/${theme}/assets`);
 mix.js('resources/assets/scripts/app.js', 'scripts');
 mix.sass('resources/assets/styles/app.scss', 'styles');
 
+mix.browserSync('http://localhost:8888');
 mix.version();

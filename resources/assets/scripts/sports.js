@@ -1,9 +1,4 @@
-// const leftLineSports = document.querySelector('.sports-header-left-line.left');
-// const rightLineSports = document.querySelector('.sports-header-right-line');
-// const smallLeft = document.querySelector('.sports-small-line.left-small')
-// const smallRight = document.querySelector('.sports-small-line.right')
 //
-// const sportsLines = [leftLineSports, rightLineSports];
 //
 // var options = {
 //   root: null,
