@@ -1,14 +1,16 @@
-const communication = document.querySelector('.communication p')
-const socialMedia = document.querySelector('.social-media p')
-const stakeholders = document.querySelector('.stakeholders p')
-const team = document.querySelector('.team p')
+const communication = document.querySelector('.communication p');
+const socialMedia = document.querySelector('.social-media p');
+const stakeholders = document.querySelector('.stakeholders p');
+const team = document.querySelector('.team p');
+
 const leftWhy = document.querySelector('.left-social-com');
 const rightWhy = document.querySelector('.right-team-stakeholders');
+
 const lineWhyMobile = document.querySelector('.why-line-mobile');
 
-// const allWhy = document.querySelector('.why-content');
 
-const infoLines = [leftWhy, rightWhy]
+// Lines for Web
+const infoLines = [leftWhy, rightWhy];
 
 var options = {
   root: null,
@@ -17,11 +19,10 @@ var options = {
 }
 
 function onIntersectionLines(entries) {
-  // Loop through the entries
   entries.forEach(entry => {
-    // Are we in viewport?
-    if (entry.intersectionRatio > 1) {
-        entry.target.classList.add('new-width')
+    console.log("hej");
+    if (entry.intersectionRatio > 0.5) {
+        entry.target.classList.add('new-width');
     }
   });
 }
@@ -34,13 +35,14 @@ infoLines.forEach((line) => {
 });
 
 
+// Text
 const textWhy = [communication, socialMedia, stakeholders, team]
-console.log(textWhy);
 
 function onIntersectionText(entries) {
   // Loop through the entries
   entries.forEach(entry => {
     // Are we in viewport?
+    console.log("fuck");
     if (entry.intersectionRatio > 0.5) {
         entry.target.classList.add('show-text')
     }
@@ -55,6 +57,7 @@ textWhy.forEach((text) => {
 
 });
 
+// Line for Mobile
 const lineMobile = [lineWhyMobile]
 
 function onIntersectionMobileLine(entries) {

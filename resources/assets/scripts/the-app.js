@@ -10,9 +10,7 @@ var options = {
 }
 
 function onIntersection(entries) {
-  // Loop through the entries
   entries.forEach(entry => {
-    // Are we in viewport?
     if (entry.intersectionRatio > 1) {
         entry.target.classList.add('longer')
     }
