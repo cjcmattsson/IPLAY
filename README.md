@@ -17,9 +17,14 @@ This project was built using the WordPress stack WordPlate https://wordplate.git
 
 ### Installation:
 - If u have not already done so, install:
-  - Install Composer https://getcomposer.org/
-  - Install NPM https://www.npmjs.com/
-
+  - Composer https://getcomposer.org/
+  - NPM https://www.npmjs.com/
+- Make sure you have a databased that you can use to set up WordPress on.
+- Download or clone this project.
+- Using your terminal, navigate to projects root map and run 'composer install' and 'npm install'.
+- Go to the .env file and set up your database-configurations
+- Start a local server, through a service like MAMP or something similar, from the 'public' folder.
+- Enjoy responsibly
 
 ### Creators:
 - Julia Kobsa (Design)
