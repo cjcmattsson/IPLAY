@@ -1,29 +1,55 @@
-# WordPlate
+# IPLAY - Uniting the world of Sport
+### @ YRGO Göteborg
+[![StyleCI](https://styleci.io/repos/113765077/shield?branch=master)](https://styleci.io/repos/113765077)
 
-[![WordPlate](https://cloud.githubusercontent.com/assets/499192/24309675/09eec350-10cd-11e7-98f3-094003bc8e15.png)](https://wordplate.github.io)
+<img src="https://media.giphy.com/media/MulLTh3CRDZyU/giphy.gif" alt="Angry man" width="100%">
 
-A modern WordPress stack built with Composer. It simplifies the fuzziness around WordPress development.
+> Arguing on the internet is one of the worlds most ancient and fine arts. But, most of us just haven't found that perfect place to let the people of the world know how wrong they are about all kinds of matters.
+Well search no further - OpFlip is here! - Platon, Socrates & Aristoteles
 
-```sh
-$ composer create-project wordplate/wordplate
-```
+## Assignment:
+- Create a <a href="https://www.reddit.com/">reddit</a> clone
+- Users should be able to create an account with email, name, biography & password as well as uppload an avatar
+- Users should be able to login and logout
+- Users should be able to create posts/links, upvote/downvote links & delete their own links
+- Users should be able to edit uploaded content (profile-info and links)
+- Have fun!
 
-[![Build Status](https://img.shields.io/travis/wordplate/framework/master.svg?style=flat)](https://travis-ci.org/wordplate/framework)
-[![StyleCI](https://styleci.io/repos/13329845/shield?style=flat)](https://styleci.io/repos/13329845)
-[![Coverage Status](https://img.shields.io/codecov/c/github/wordplate/framework.svg?style=flat)](https://codecov.io/github/wordplate/framework)
-[![Total Downloads](https://img.shields.io/packagist/dt/wordplate/framework.svg?style=flat)](https://packagist.org/packages/wordplate/framework)
-[![Latest Version](https://img.shields.io/github/release/wordplate/wordplate.svg?style=flat)](https://github.com/wordplate/wordplate/releases)
-[![License](https://img.shields.io/packagist/l/wordplate/wordplate.svg?style=flat)](https://packagist.org/packages/wordplate/wordplate)
 
-## Documentation
+## My project - OpFlip
+OpFlip is a place where people can come together to not agree with each other and argue irrationally. No place is better for argumantation and making people change their minds on various issues than the internet, and OpFlip is where you should do this.
 
-Visit the [official documentation](https://wordplate.github.io/docs/introduction) page if you want to dive right in and start building WordPress applications with WordPlate. The documentation is thorough, complete, and makes it a breeze to get started learning WordPlate.
 
-## Contributing
+### The rules of OpFlip
+- Dont be mean. Or at least not TOO mean
+- Never give up on your arguments. The others are wrong, you are right. You know this
+- Tell your friends about your new favourite site
 
-Please review our [contribution guidelines](https://github.com/wordplate/framework/blob/master/CONTRIBUTING.md) before submitting a pull request.
 
-## License
+## To view project on your computer
+- Clone/download repository from GitHub
+- Download/open MAMP
+- Go to Preferences in MAMP and set Web Server (root directory) to the folder you just downloaded
+- Press "Start Servers" in MAMP
+- Open the index.php-file by typing localhost:8888 in your browser of choice
+- Enjoy responsibly
 
-[MIT](LICENSE) © [Vincent Klaiber](https://vinkla.com)
-# IPLAY
+
+### Written in:
+- HTML
+- CSS
+- Javascript
+- PHP
+- Bootstrap
+
+### Creators:
+- Christopher Mattsson
+- Älon Musk
+- Jeff Bezös
+
+### Tested by:
+- André Robsahm
+- Henrik Bielsten
+
+### Final notes:
+- OpFlip is a joke. People are generally not changing their minds due to internet argumantation. The creators of OpFlip are well aware of this and are therefore using this fact as a "fun" theme for the site.
