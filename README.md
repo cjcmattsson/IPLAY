@@ -4,7 +4,7 @@
 
 <img src="https://media.giphy.com/media/MulLTh3CRDZyU/giphy.gif" alt="Go sports go!" width="100%">
 
-> Sports is fun! And so is the reading you are about to take part of in thsi README-file.
+> Sports is fun! And so is the reading you are about to take part of in this README-file.
 
 ## Assignment:
 Update IPLAY's current website http://www.iplay.global/ so as to:
