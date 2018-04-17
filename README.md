@@ -1,10 +1,10 @@
-# IPLAY - Uniting the world of Sport
-### Joint assignment between Web Development and Digital Design programs
+# IPLAY - Assignment
+### Joint project between Web Development and Digital Design
 ### YRGO Göteborg
 
 <img src="https://media.giphy.com/media/MulLTh3CRDZyU/giphy.gif" alt="Go sports go!" width="100%">
 
-> Sports is fun!
+> Sports is fun! And so is the reading you are about to take part of in thsi README-file.
 
 ## Assignment:
 Update IPLAY's current website http://www.iplay.global/ so as to:
@@ -26,9 +26,7 @@ This project was built using the WordPress stack WordPlate https://wordplate.git
 - Start a local server, through a service like MAMP or something similar, from the 'public' folder.
 - Enjoy responsibly
 
-### Creators:
+## Creators:
 - Julia Kobsa (Design)
 - Tariq Aljafari (Design)
 - Christopher Mattsson (Development)
-
-Built using Wordplate
